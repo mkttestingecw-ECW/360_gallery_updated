@@ -2,20 +2,43 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>360 Gallery - Fixed</title>
+    <title>360 Gallery - Enhanced</title>
     <link rel="stylesheet" href="pannellum.css">
     <link rel="stylesheet" href="style.css">
     <script src="pannellum.js"></script>
 </head>
 <body>
     <div id="app">
+        
         <div id="viewer"></div>
+
+        <div id="fadeOverlay"></div>
+
+        <div id="idleIndicator">
+            <div class="hand-icon">👆</div>
+            <div class="drag-text">Drag to Explore</div>
+        </div>
+
+        <div id="badge360">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                <path d="M21.5 12a9.5 9.5 0 1 1-9.5-9.5"/>
+                <path d="M12 7v5l3 3"/>
+                <circle cx="12" cy="12" r="2"/>
+            </svg>
+            <span>360° View</span>
+        </div>
+
         <div id="thumbPanel"></div>
+
         <div id="controls">
             <button id="prevBtn" aria-label="Previous Image">◀</button>
+            
+            <button id="fsBtn" aria-label="Toggle Fullscreen">⛶</button>
+            
             <button id="nextBtn" aria-label="Next Image">▶</button>
         </div>
     </div>
+
     <script src="app.js"></script>
 </body>
 </html>
